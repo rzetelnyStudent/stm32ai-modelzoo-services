@@ -45,7 +45,7 @@ __attribute__ ((aligned (32)))
 uint8_t CapturedImage_Buffer[CAM_FRAME_BUFFER_SIZE];
 
 /***Buffer to store the rescaled frame***/
-__attribute__((section(".RescaledImage_Buffer_AXIRAM")))
+__attribute__((section(".RescaledImage_Buffer_SDRAM")))
 __attribute__ ((aligned (32)))
 uint8_t RescaledImage_Buffer[RESCALED_FRAME_BUFFER_SIZE];
 
@@ -69,10 +69,16 @@ __attribute__ ((aligned (32)))
   
  /***Buffer to store the NN Activation data***/
  /*** @GENERATED CODE START - DO NOT TOUCH@ ***/
+__attribute__((section(".NN_Activation_Buffer_DTCMRAM")))
+__attribute__ ((aligned (32)))
+static uint8_t NN_Activation_Buffer_DTCMRAM[AI_ACTIVATION_1_SIZE_BYTES + 32 - (AI_ACTIVATION_1_SIZE_BYTES%32)];
 __attribute__((section(".NN_Activation_Buffer_AXIRAM")))
 __attribute__ ((aligned (32)))
-static uint8_t NN_Activation_Buffer_AXIRAM[AI_ACTIVATION_1_SIZE_BYTES + 32 - (AI_ACTIVATION_1_SIZE_BYTES%32)];
-ai_handle NN_Activation_Buffer[AI_ACTIVATION_BUFFERS_COUNT] = { NN_Activation_Buffer_AXIRAM, };
+static uint8_t NN_Activation_Buffer_AXIRAM[AI_ACTIVATION_2_SIZE_BYTES + 32 - (AI_ACTIVATION_2_SIZE_BYTES%32)];
+__attribute__((section(".NN_Activation_Buffer_SDRAM")))
+__attribute__ ((aligned (32)))
+static uint8_t NN_Activation_Buffer_SDRAM[AI_ACTIVATION_3_SIZE_BYTES + 32 - (AI_ACTIVATION_3_SIZE_BYTES%32)];
+ai_handle NN_Activation_Buffer[AI_ACTIVATION_BUFFERS_COUNT] = { NN_Activation_Buffer_DTCMRAM, NN_Activation_Buffer_AXIRAM, NN_Activation_Buffer_SDRAM, };
 
  /*** @GENERATED CODE STOP - DO NOT TOUCH@ ***/
 

@@ -1,10 +1,11 @@
 general:
-   model_path: ../../../model_zoo/object_detection/st_ssd_mobilenet_v1/ST_pretrainedmodel_public_dataset/coco_2017_person/st_ssd_mobilenet_v1_025_256/st_ssd_mobilenet_v1_025_256_int8.tflite
-   model_type: st_ssd_mobilenet_v1
+   model_path: ../../experiments_outputs/2025_04_24_22_05_29/quantized_models/quantized_model.tflite
+   model_type: st_yolo_x
 operation_mode: deployment
 
 dataset:
-   class_names: [person]
+   name: Cars_dataset
+   class_names: [car]
 
 preprocessing:
   resizing:
@@ -19,12 +20,12 @@ postprocessing:
   max_detection_boxes: 10
 
 tools:
-   stedgeai:
-      version: 10.0.0
-      optimization: balanced
-      on_cloud: True
-      path_to_stedgeai: C:/Users/<XXXXX>/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/<*.*.*>/Utilities/windows/stedgeai.exe
-   path_to_cubeIDE: C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/stm32cubeide.exe
+  stedgeai:
+    version: 10.0.0
+    optimization: balanced
+    on_cloud: False
+    path_to_stedgeai: C:/Users/alert/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe
+  path_to_cubeIDE: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/stm32cubeide.exe
 
 deployment:
   c_project_path: ../../application_code/object_detection/STM32H7/
@@ -37,8 +38,8 @@ deployment:
     output: DISPLAY_INTERFACE_USB
 
 mlflow:
-   uri: ./experiments_outputs/mlruns
+   uri: ../../experiments_outputs/mlruns
 
 hydra:
    run:
-      dir: ./experiments_outputs/${now:%Y_%m_%d_%H_%M_%S}
+      dir: ../../experiments_outputs/${now:%Y_%m_%d_%H_%M_%S}
