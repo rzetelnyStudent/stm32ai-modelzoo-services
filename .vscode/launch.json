@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Learn",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/object_detection/src/stm32ai_main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/object_detection/src/",
+            "justMyCode": true
+        },
+        {
+            "name": "Deploy",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/object_detection/src/stm32ai_main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config-path", "config_file_examples",
+                "--config-name", "deployment_config.yaml"
+            ],
+            "cwd": "${workspaceFolder}/object_detection/src/",
+            "justMyCode": true
+        }
+    ]
+}

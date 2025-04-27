@@ -1,6 +1,7 @@
 general:
-   model_path: ../../experiments_outputs/2025_04_24_22_05_29/quantized_models/quantized_model.tflite
+   model_path: ../../experiments_outputs/output/quantized_models/quantized_model.tflite
    model_type: st_yolo_x
+   display_figures: True
 operation_mode: deployment
 
 dataset:
@@ -24,18 +25,16 @@ tools:
     version: 10.0.0
     optimization: balanced
     on_cloud: False
-    path_to_stedgeai: C:/Users/alert/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe
+    path_to_stedgeai: C:/ST/STEdgeAI/2.1/Utilities/windows/stedgeai.exe # C:/Users/alert/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.0.0/Utilities/windows/stedgeai.exe
   path_to_cubeIDE: C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/stm32cubeide.exe
 
 deployment:
-  c_project_path: ../../application_code/object_detection/STM32H7/
+  c_project_path: ../../application_code/object_detection/STM32N6/
   IDE: GCC
   verbosity: 1
   hardware_setup:
-    serie: STM32H7
-    board: STM32H747I-DISCO
-    input: CAMERA_INTERFACE_DCMI
-    output: DISPLAY_INTERFACE_USB
+    serie: STM32N6
+    board: STM32N6570-DK
 
 mlflow:
    uri: ../../experiments_outputs/mlruns
