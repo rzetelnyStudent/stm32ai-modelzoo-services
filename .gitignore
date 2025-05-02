@@ -3,6 +3,8 @@
 Thumbs.db
 __pycache__/
 experiments_outputs/mlruns/
+/experiments_outputs/*/generated/
+/experiments_outputs/*/report/
 .hydra/
 
 # CUBE IDE PART:

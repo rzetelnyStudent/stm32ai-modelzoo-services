@@ -183,7 +183,7 @@ def cmd_compile(
     cmd_line.extend(['generate --target', str(series)])
     for m_file in session.model_path:
         cmd_line.extend(['-m', m_file])
-    cmd_line.extend(['--output', output_dir, '--workspace', output_dir])
+    cmd_line.extend(['--output', output_dir, '--workspace', f"{output_dir}/report"])
 
     session.options.dll = True
 
