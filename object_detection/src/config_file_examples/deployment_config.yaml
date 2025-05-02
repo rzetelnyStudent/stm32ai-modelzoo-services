@@ -15,7 +15,7 @@ preprocessing:
   color_mode: rgb
 
 postprocessing:
-  confidence_thresh: 0.6
+  confidence_thresh: 0.05
   NMS_thresh: 0.5
   IoU_eval_thresh: 0.3
   max_detection_boxes: 10
