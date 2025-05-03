@@ -1,8 +1,8 @@
 dataset:
-  dataset_name: Cars_dataset
-  training_path: ../Cars_dataset/train
-  validation_path: ../Cars_dataset/valid
-  test_path: ../Cars_dataset/test
+  dataset_name: Furniture
+  training_path: ../Furniture/train
+  validation_path: ../Furniture/valid
+  test_path: ../Furniture/test
 
 settings:
   max_detections: 20

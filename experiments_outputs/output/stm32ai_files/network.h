@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    network.h
   * @author  AST Embedded Analytics Research Platform
-  * @date    2025-05-03T15:32:20+0200
+  * @date    2025-05-03T18:30:18+0200
   * @brief   AI Tool Automatic Code Generator for Embedded NN computing
   ******************************************************************************
   * @attention
@@ -70,24 +70,24 @@ AI_DEPRECATED
 #define AI_NETWORK_OUT_1_FORMAT      (AI_BUFFER_FORMAT_FLOAT)
 #define AI_NETWORK_OUT_1_HEIGHT      (15)
 #define AI_NETWORK_OUT_1_WIDTH       (15)
-#define AI_NETWORK_OUT_1_CHANNEL     (18)
-#define AI_NETWORK_OUT_1_SIZE        (4050)
-#define AI_NETWORK_OUT_1_SIZE_BYTES  (16200)
+#define AI_NETWORK_OUT_1_CHANNEL     (24)
+#define AI_NETWORK_OUT_1_SIZE        (5400)
+#define AI_NETWORK_OUT_1_SIZE_BYTES  (21600)
 #define AI_NETWORK_OUT_2_FORMAT      (AI_BUFFER_FORMAT_FLOAT)
 #define AI_NETWORK_OUT_2_HEIGHT      (60)
 #define AI_NETWORK_OUT_2_WIDTH       (60)
-#define AI_NETWORK_OUT_2_CHANNEL     (18)
-#define AI_NETWORK_OUT_2_SIZE        (64800)
-#define AI_NETWORK_OUT_2_SIZE_BYTES  (259200)
+#define AI_NETWORK_OUT_2_CHANNEL     (24)
+#define AI_NETWORK_OUT_2_SIZE        (86400)
+#define AI_NETWORK_OUT_2_SIZE_BYTES  (345600)
 #define AI_NETWORK_OUT_3_FORMAT      (AI_BUFFER_FORMAT_FLOAT)
 #define AI_NETWORK_OUT_3_HEIGHT      (30)
 #define AI_NETWORK_OUT_3_WIDTH       (30)
-#define AI_NETWORK_OUT_3_CHANNEL     (18)
-#define AI_NETWORK_OUT_3_SIZE        (16200)
-#define AI_NETWORK_OUT_3_SIZE_BYTES  (64800)
+#define AI_NETWORK_OUT_3_CHANNEL     (24)
+#define AI_NETWORK_OUT_3_SIZE        (21600)
+#define AI_NETWORK_OUT_3_SIZE_BYTES  (86400)
 
 /******************************************************************************/
-#define AI_NETWORK_N_NODES (288)
+#define AI_NETWORK_N_NODES (290)
 
 
 AI_API_DECLARE_BEGIN

@@ -16,13 +16,13 @@ operation_mode: chain_tqeb
 #        'chain_tqeb','chain_tqe','chain_eqe','chain_qb','chain_eqeb','chain_qd ']
 
 dataset:
-   name: Cars_dataset    
-   class_names: [car]
-   training_path: ../datasets/Cars_dataset/train/
-   validation_path: ../datasets/Cars_dataset/valid/
+   name: Furniture    
+   class_names: [Chair, Sofa, Table]
+   training_path: ../datasets/Furniture/train/
+   validation_path: ../datasets/Furniture/valid/
    validation_split: 
-   test_path: ../datasets/Cars_dataset/test/
-   quantization_path: ../datasets/Cars_dataset/train/
+   test_path: ../datasets/Furniture/test/
+   quantization_path: ../datasets/Furniture/train/
    quantization_split:
 
 preprocessing:
@@ -53,7 +53,7 @@ training:
     #pretrained_weights: imagenet
   dropout: null
   batch_size: 2
-  epochs: 12
+  epochs: 16
   optimizer:
     Adam:
       learning_rate: 0.0025

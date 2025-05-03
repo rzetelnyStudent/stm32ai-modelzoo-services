@@ -5,9 +5,9 @@ general:
 operation_mode: deployment
 
 dataset:
-   name: Cars_dataset
+   name: Furniture
    #class_names: ['person']
-   class_names: [car]
+   class_names: [Chair, Sofa, Table]
 
 preprocessing:
   resizing:
@@ -17,7 +17,7 @@ preprocessing:
 
 postprocessing:
   yolo_anchors: [0.5, 0.5, 0.07, 0.25, 0.23, 0.7]
-  confidence_thresh: 0.01
+  confidence_thresh: 0.2
   NMS_thresh: 0.5
   IoU_eval_thresh: 0.5
   plot_metrics: false
