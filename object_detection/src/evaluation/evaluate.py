@@ -307,7 +307,7 @@ def plot_precision_versus_recall(metrics, class_names, plots_dir):
 
     # Create the directory where plots will be saved
     if os.path.exists(plots_dir):
-        rmtree(plots_dir)
+        shutil.rmtree(plots_dir)
     os.makedirs(plots_dir)
 
     for c in list(metrics.keys()):

@@ -1,4 +1,4 @@
-# crossing dataset > 2025-04-24 9:23pm
+# crossing dataset > 2025-05-03 12:30pm
 https://universe.roboflow.com/crossing-dataset/crossing-dataset
 
 Provided by a Roboflow user

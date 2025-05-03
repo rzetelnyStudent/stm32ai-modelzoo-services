@@ -1,11 +1,12 @@
 general:
-   model_path: ../../experiments_outputs/output/quantized_models/quantized_model.tflite
+   model_path: ../../experiments_outputs/output/quantized_models/quantized_model.tflite # C:\Users\alert\repos\stm32ai-modelzoo\object_detection\st_yolo_x\ST_pretrainedmodel_public_dataset\coco_2017_person\st_yolo_x_nano_480/st_yolo_x_nano_480_1.0_0.25_3_int8.tflite # ../../experiments_outputs/output/quantized_models/quantized_model.tflite
    model_type: st_yolo_x
    display_figures: True
 operation_mode: deployment
 
 dataset:
    name: Cars_dataset
+   #class_names: ['person']
    class_names: [car]
 
 preprocessing:
@@ -15,9 +16,11 @@ preprocessing:
   color_mode: rgb
 
 postprocessing:
-  confidence_thresh: 0.05
+  yolo_anchors: [0.5, 0.5, 0.07, 0.25, 0.23, 0.7]
+  confidence_thresh: 0.01
   NMS_thresh: 0.5
-  IoU_eval_thresh: 0.3
+  IoU_eval_thresh: 0.5
+  plot_metrics: false
   max_detection_boxes: 10
 
 tools:

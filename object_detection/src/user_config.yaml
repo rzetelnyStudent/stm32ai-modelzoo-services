@@ -3,7 +3,7 @@ general:
   model_type: st_yolo_x
 #choices=[st_ssd_mobilenet_v1, ssd_mobilenet_v2_fpnlite, tiny_yolo_v2, st_yolo_lc_v1, 
 #         st_yolo_x, yolo_v8, yolo_v5u]
-  #model_path: C:\Users\alert\repos\stm32ai-modelzoo\object_detection\st_yolo_x\ST_pretrainedmodel_public_dataset\coco_2017_80_classes\st_yolo_x_nano_480\st_yolo_x_nano_480_1.0_0.25_3.h5
+  #model_path: C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output\quantized_models\quantized_model.tflite
   logs_dir: logs
   saved_models_dir: ../../experiments_outputs/saved_models
   display_figures: True
@@ -17,7 +17,7 @@ operation_mode: chain_tqeb
 
 dataset:
    name: Cars_dataset    
-   class_names: [ car ]
+   class_names: [car]
    training_path: ../datasets/Cars_dataset/train/
    validation_path: ../datasets/Cars_dataset/valid/
    validation_split: 
@@ -71,12 +71,12 @@ training:
       verbose: 1
 
 postprocessing:
-  yolo_anchors: [0.5, 0.5, 0.07, 0.25, 0.23, 0.7]  
-  confidence_thresh: 0.01
+  yolo_anchors: [0.5, 0.5, 0.07, 0.25, 0.23, 0.7]
+  confidence_thresh: 0.1
   NMS_thresh: 0.5
-  IoU_eval_thresh: 0.4
-  plot_metrics: True
-  max_detection_boxes: 100
+  IoU_eval_thresh: 0.5
+  plot_metrics: false
+  max_detection_boxes: 10
 
 quantization:
   quantizer: TFlite_converter
