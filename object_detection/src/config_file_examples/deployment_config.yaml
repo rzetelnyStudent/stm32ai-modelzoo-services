@@ -5,9 +5,9 @@ general:
 operation_mode: deployment
 
 dataset:
-   name: Furniture
+   name: Cars_dataset
    #class_names: ['person']
-   class_names: [Chair, Sofa, Table]
+   class_names: ['car']
 
 preprocessing:
   resizing:
@@ -17,11 +17,11 @@ preprocessing:
 
 postprocessing:
   yolo_anchors: [0.5, 0.5, 0.07, 0.25, 0.23, 0.7]
-  confidence_thresh: 0.2
+  confidence_thresh: 0.5
   NMS_thresh: 0.5
   IoU_eval_thresh: 0.5
   plot_metrics: false
-  max_detection_boxes: 10
+  max_detection_boxes: 15
 
 tools:
   stedgeai:
