@@ -1,8 +1,8 @@
 
-crossing dataset - v4 2025-05-03 12:30pm
+crossing dataset - v5 2025-05-09 9:35pm
 ==============================
 
-This dataset was exported via roboflow.com on May 3, 2025 at 10:30 AM GMT
+This dataset was exported via roboflow.com on May 9, 2025 at 7:36 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 198 images.
+The dataset includes 4623 images.
 Cars are annotated in YOLO v3 Darknet format.
 
 The following pre-processing was applied to each image:

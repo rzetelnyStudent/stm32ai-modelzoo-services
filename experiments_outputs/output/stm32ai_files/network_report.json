@@ -11,12 +11,12 @@
     "cli_version_str": "2.0.0-20049",
     "code_size": 0,
     "compression": [],
-    "date_time": "2025-05-03T18:30:18+0200",
+    "date_time": "2025-05-11T07:35:59+0200",
     "error": 0,
     "error_str": [],
     "exec_cmd": "generate",
     "exec_duration": 0.0,
-    "hash": "0xd88bb700b15b68f80a5bc796b15b7a65",
+    "hash": "0x2c474fb4f04382b8ee09e5fa987d6304",
     "inputs": [
         "serving_default_input_10"
     ],
@@ -6915,21 +6915,21 @@
                 279
             ],
             "extras": {
-                "n_macc": 2073609,
-                "n_params": 585,
-                "psize": 612,
+                "n_macc": 691203,
+                "n_params": 195,
+                "psize": 204,
                 "rom_output": {
-                    "c_size": 32400,
+                    "c_size": 10800,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         60,
-                        9,
+                        3,
                         60
                     ]
                 },
-                "rom_size": 612
+                "rom_size": 204
             },
             "id": 163,
             "inputs": [
@@ -7188,13 +7188,13 @@
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 86400,
+                    "c_size": 64800,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         60,
-                        24,
+                        18,
                         60
                     ]
                 },
@@ -7215,17 +7215,17 @@
                 289
             ],
             "extras": {
-                "n_macc": 172800,
+                "n_macc": 129600,
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 345600,
+                    "c_size": 259200,
                     "fmt": {
                         "format": "float"
                     },
                     "shape": [
                         60,
-                        24,
+                        18,
                         60
                     ]
                 },
@@ -8165,21 +8165,21 @@
                 261
             ],
             "extras": {
-                "n_macc": 518409,
-                "n_params": 585,
-                "psize": 612,
+                "n_macc": 172803,
+                "n_params": 195,
+                "psize": 204,
                 "rom_output": {
-                    "c_size": 8100,
+                    "c_size": 2700,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         30,
-                        9,
+                        3,
                         30
                     ]
                 },
-                "rom_size": 612
+                "rom_size": 204
             },
             "id": 193,
             "inputs": [
@@ -8438,13 +8438,13 @@
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 21600,
+                    "c_size": 16200,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         30,
-                        24,
+                        18,
                         30
                     ]
                 },
@@ -8465,17 +8465,17 @@
                 271
             ],
             "extras": {
-                "n_macc": 43200,
+                "n_macc": 32400,
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 86400,
+                    "c_size": 64800,
                     "fmt": {
                         "format": "float"
                     },
                     "shape": [
                         30,
-                        24,
+                        18,
                         30
                     ]
                 },
@@ -9415,21 +9415,21 @@
                 243
             ],
             "extras": {
-                "n_macc": 129609,
-                "n_params": 585,
-                "psize": 612,
+                "n_macc": 43203,
+                "n_params": 195,
+                "psize": 204,
                 "rom_output": {
-                    "c_size": 2025,
+                    "c_size": 675,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         15,
-                        9,
+                        3,
                         15
                     ]
                 },
-                "rom_size": 612
+                "rom_size": 204
             },
             "id": 223,
             "inputs": [
@@ -9688,13 +9688,13 @@
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 5400,
+                    "c_size": 4050,
                     "fmt": {
                         "format": "s8"
                     },
                     "shape": [
                         15,
-                        24,
+                        18,
                         15
                     ]
                 },
@@ -9715,17 +9715,17 @@
                 253
             ],
             "extras": {
-                "n_macc": 10800,
+                "n_macc": 8100,
                 "n_params": 0,
                 "psize": 0,
                 "rom_output": {
-                    "c_size": 21600,
+                    "c_size": 16200,
                     "fmt": {
                         "format": "float"
                     },
                     "shape": [
                         15,
-                        24,
+                        18,
                         15
                     ]
                 },
@@ -9743,9 +9743,9 @@
     "model_files": [
         "C:\\Users\\alert\\repos\\stm32ai-modelzoo-services\\experiments_outputs\\output\\quantized_models\\quantized_model.tflite"
     ],
-    "model_n_params": 1140584,
+    "model_n_params": 1139414,
     "model_name": "quantized_model",
-    "model_size": 1176884,
+    "model_size": 1175660,
     "model_type": "tflite",
     "name": "network",
     "outputs": [
@@ -9768,25 +9768,25 @@
             "name": "serving_default_input_10"
         }
     ],
-    "rom_n_macc": 904126900,
+    "rom_n_macc": 902255782,
     "rom_outputs": [
         {
-            "c_size": 21600,
+            "c_size": 16200,
             "c_type": "float",
             "name": "conversion_231"
         },
         {
-            "c_size": 345600,
+            "c_size": 259200,
             "c_type": "float",
             "name": "conversion_171"
         },
         {
-            "c_size": 86400,
+            "c_size": 64800,
             "c_type": "float",
             "name": "conversion_201"
         }
     ],
-    "rom_size": 1176884,
+    "rom_size": 1175660,
     "strategy": "",
     "tools_api_version": "2.0.0-20049",
     "tools_version": "2.0.0-20049",
