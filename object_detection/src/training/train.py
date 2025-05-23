@@ -129,8 +129,8 @@ def set_up_yolo_x_model(cfg, model, input_shape=None, num_labels=None, val_datas
     print("Using Yolo anchors:")
     for anchor in cpp.yolo_anchors:
         print(" ", anchor)
-    print("Using depth_mul: ",ctm.depth_mul)
-    print("Using width_mul: ",ctm.width_mul)
+    #print("Using depth_mul: ",ctm.depth_mul)
+    #print("Using width_mul: ",ctm.width_mul)
 
     data_augmentation_cfg = cfg.data_augmentation.config if cfg.data_augmentation else None      
 

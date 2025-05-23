@@ -584,9 +584,9 @@ def parse_training_section(cfg: DictConfig,
     if count == 0:
         raise ValueError("\nExpecting either `training.model`, `training.resume_training_from` or "
                          "`general.model_path` attribute\nPlease check your configuration file.")
-    if count > 1:
-        raise ValueError("\nThe `training.model`, `training.resume_training_from` and `general.model_path` "
-                         "attributes are mutually exclusive.\nPlease check your configuration file.")
+    #if count > 1:
+        #raise ValueError("\nThe `training.model`, `training.resume_training_from` and `general.model_path` "
+        #                 "attributes are mutually exclusive.\nPlease check your configuration file.")
 
     if cfg.model:
         required = ["input_shape"]

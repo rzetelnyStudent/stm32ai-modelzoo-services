@@ -3,7 +3,7 @@ general:
   model_type: st_yolo_x
 #choices=[st_ssd_mobilenet_v1, ssd_mobilenet_v2_fpnlite, tiny_yolo_v2, st_yolo_lc_v1, 
 #         st_yolo_x, yolo_v8, yolo_v5u]
-  #model_path: C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output\quantized_models\quantized_model.tflite
+  model_path: C:\Users\alert\repos\stm32ai-modelzoo\object_detection\st_yolo_x\ST_pretrainedmodel_custom_dataset\st_person\st_yolo_x_nano_480\st_yolo_x_nano_480_1.0_0.25_3.h5 # C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output\quantized_models\quantized_model.tflite
   logs_dir: logs
   saved_models_dir: ../../experiments_outputs/saved_models
   display_figures: True
@@ -31,25 +31,12 @@ preprocessing:
     aspect_ratio: fit
     interpolation: nearest
   color_mode: rgb
-       
-# data_augmentation:
-#   random_contrast:
-#     factor: 0.4
-#   random_brightness:
-#     factor: 0.3
-#   random_flip:
-#     mode: horizontal
-#   random_translation:
-#     width_factor: 0.1
-#     height_factor: 0.1
-#   random_rotation:
-#     factor: 0.05
 
 training:
-  model:
-    input_shape: (480, 480, 3)
-    depth_mul: 1.0
-    width_mul: 0.25
+  #model:
+    #input_shape: (480, 480, 3)
+    #depth_mul: 1.0
+    #width_mul: 0.25
     #pretrained_weights: imagenet
   dropout: null
   batch_size: 2

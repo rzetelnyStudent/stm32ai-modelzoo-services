@@ -1,5 +1,5 @@
 ST Edge AI Core v2.0.0-20049
-Created date          : 2025-05-11 07:36:05
+Created date          : 2025-05-22 07:15:00
 Parameters            : generate --target stm32 -m C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output\quantized_models\quantized_model.tflite -v 0 --allocate-inputs --allocate-outputs --output C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output/stm32ai_files --workspace C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output/stm32ai_files --optimization balanced
 
 Exec/report summary (generate)
@@ -15,7 +15,7 @@ workspace dir      :   C:\Users\alert\repos\stm32ai-modelzoo-services\experiment
 output dir         :   C:\Users\alert\repos\stm32ai-modelzoo-services\experiments_outputs\output\stm32ai_files                             
 model_fmt          :   sa/ua per tensor                                                                                                    
 model_name         :   quantized_model                                                                                                     
-model_hash         :   0x2c474fb4f04382b8ee09e5fa987d6304                                                                                  
+model_hash         :   0xa31f885a99cc7003f80d39c873df118e                                                                                  
 params #           :   1,139,414 items (1148.11 KiB)                                                                                       
 -------------------------------------------------------------------------------------------------------------------------------------------
 input 1/1          :   'serving_default_input_10', uint8(1x480x480x3), 675.00 KBytes, QLinear(0.003921569,0,uint8), activations            
