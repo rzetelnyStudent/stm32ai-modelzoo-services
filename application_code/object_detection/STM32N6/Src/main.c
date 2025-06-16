@@ -124,6 +124,7 @@ __attribute__ ((aligned (32)))
 uint8_t lcd_fg_buffer[2][LCD_FG_WIDTH * LCD_FG_HEIGHT * 2];
 static int lcd_fg_buffer_rd_idx;
 
+
 static void SystemClock_Config(void);
 static void NPURam_enable(void);
 static void NPUCache_config(void);
