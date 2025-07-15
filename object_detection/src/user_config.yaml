@@ -36,11 +36,11 @@ training:
   model:
     input_shape: (480, 480, 3)
     depth_mul: 1.0
-    width_mul: 1.0
+    width_mul: 0.5
     #pretrained_weights: imagenet
   dropout: null
   batch_size: 2
-  epochs: 1
+  epochs: 120
   optimizer:
     Adam:
       learning_rate: 0.0025
